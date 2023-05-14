@@ -76,13 +76,13 @@ Color of the line is based on choosen variable for example high number of HIV in
 Tunisia with low number of incidents will be presented by light blue line. <br>
 Line plots are sorted from highest to lowest life_expectancy in 2000.<br>
 
-Function parameters: 
-![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/91009012-80d4-48cc-b77a-7b2def9517b2)
+Function parameters: <br>
+![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/91009012-80d4-48cc-b77a-7b2def9517b2) <br>
 **area** - Region to invastigate (Africa or Asia...) <br>
 **col_name** - variable affecting color line in line plots (for example 'Incidents_HIV') <br>
 **reverse_color** - if False (deafult) - the lower the value of col_name, the darker the color of the line. Used with variables describing numer of vaccinations etc. <br>
 If True - the higher the value of col_name, the darker the color of the line. Used with variables describing HIV incidents, thinness etc.<br>
-**info** - string value, that is going to be attached to to plot title (using glue library). <br>
+**info** - string value, that is going to be attached to the plot title (using glue library). <br>
 ![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/5c886719-289c-4d1b-b815-b36b3563b29d) <br>
 ![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/de6a0af4-c267-4e8e-bf6e-4ad43246a796) <br>
 ![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/538c5851-6200-4ef5-990d-35220731df52) <br>
@@ -91,13 +91,15 @@ If True - the higher the value of col_name, the darker the color of the line. Us
 Subset containing only data describing Poland is created. Columns containing same value are removed from dataframe. <br>
 ![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/638a9b6e-a616-4797-bb3d-b4be89c54864) <br>
 
-Correlation matrix for Poland is shown, then vector called variables_list is created. variables_list stores names of variables sorted by highest absolute value 
-of correlation coefficient. It will be used while looping: plots presenting variables with highest correlation coefficient will be printed first.
+Correlation matrix for Poland is shown. <br>
 ![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/4ea883ff-e6c2-4404-9fb9-9aeb54640168) <br>
+Vector called variables_list is created. variables_list stores names of variables sorted by highest absolute value of correlation coefficient. <br>
+It will be used while looping: plots presenting variables with highest correlation coefficient will be printed first. <br>
 ![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/dce19e03-672d-472f-b0b5-c62892bff194) <br>
 
 Next, the plots presenting percent change since 2000 will be displayed - using loop over variable_list. Plot shows percent changes of life expectancy and choosen variable <br>
 Using percent change axis should prevent user from getting wrong consulsions, which is a common problem with dual axis plots. <br>
+<br>
 **Please press enter to display the next plot (it is also mentioned in the console)** <b>
 ![image](https://github.com/Jakub12091/ggplot_life_expectancy_correlation_visualisation/assets/115424802/e2133ef8-d806-4345-bf9a-1cd00ce97278) <br>
 
